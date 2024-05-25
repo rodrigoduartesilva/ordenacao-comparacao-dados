@@ -119,4 +119,40 @@ public class Main {
 
 5. Crie uma lista utilizando a interface List e instancie-a tanto como ArrayList quanto como LinkedList. Adicione elementos e imprima a lista, mostrando que é possível trocar facilmente a implementação.
 
-6. Modifique o Exercício 4 para declarar a variável de lista como a interface List, demonstrando o uso de polimorfismo.
+```Java
+
+package br.com.duarte.ordenacao.main;
+
+import br.com.duarte.ordenacao.model.Titulo;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.LinkedList;
+import java.util.List;
+
+public class Main {
+    public static void main(String[] args) {
+        
+        List<String> listaNomesArrayList = new ArrayList<>();
+        List<String> listaNomesLinkedList = new LinkedList<>();
+
+        listaNomesArrayList.add("Samira");
+        listaNomesArrayList.add("Mauricio");
+        listaNomesArrayList.add("Belinha");
+        listaNomesArrayList.add("Cinza");
+
+        System.out.println("Lista usando ArrayList: " + listaNomesArrayList);
+
+        listaNomesLinkedList.add("Samira");
+        listaNomesLinkedList.add("Mauricio");
+        listaNomesLinkedList.add("Belinha");
+        listaNomesLinkedList.add("Cinza");
+
+        System.out.println("Lista usando LikedList: " + listaNomesLinkedList);
+    }
+}
+
+
+```
+
+6. Modifique o Exercício 5 para declarar a variável de lista como a interface List, demonstrando o uso de polimorfismo.
