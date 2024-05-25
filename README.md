@@ -156,3 +156,41 @@ public class Main {
 ```
 
 6. Modifique o Exercício 5 para declarar a variável de lista como a interface List, demonstrando o uso de polimorfismo.
+
+```Java
+
+package br.com.duarte.ordenacao.main;
+
+import br.com.duarte.ordenacao.model.Titulo;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.LinkedList;
+import java.util.List;
+
+public class Main {
+    public static void main(String[] args) {
+        
+        List<String> listaNomesPolimorfismoExemplo;
+
+        listaNomesPolimorfismoExemplo = new ArrayList<>();
+        listaNomesPolimorfismoExemplo.add("Samira");
+        listaNomesPolimorfismoExemplo.add("Mauricio");
+        listaNomesPolimorfismoExemplo.add("Belinha");
+        listaNomesPolimorfismoExemplo.add("Cinza");
+
+        System.out.println("Exemplo de Polimorfismo com ArrayList: " + listaNomesPolimorfismoExemplo);
+
+        listaNomesPolimorfismoExemplo = new LinkedList<>();
+
+        listaNomesPolimorfismoExemplo.add("Samira");
+        listaNomesPolimorfismoExemplo.add("Mauricio");
+        listaNomesPolimorfismoExemplo.add("Belinha");
+        listaNomesPolimorfismoExemplo.add("Cinza");
+
+        System.out.println("Exemplo de Polimorfismo com LinkedList: " + listaNomesPolimorfismoExemplo);
+    }
+}
+
+
+```

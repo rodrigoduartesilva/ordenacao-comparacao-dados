@@ -65,25 +65,23 @@ public class Main {
 
         //Resolução item 6:
 
-        List<String> listaNomesPolimorfismoExemplo;
-
-        listaNomesPolimorfismoExemplo = new ArrayList<>();
-        listaNomesPolimorfismoExemplo.add("Samira");
-        listaNomesPolimorfismoExemplo.add("Mauricio");
-        listaNomesPolimorfismoExemplo.add("Belinha");
-        listaNomesPolimorfismoExemplo.add("Cinza");
-
-        System.out.println("Exemplo de Polimorfismo com ArrayList: " + listaNomesPolimorfismoExemplo);
-
-        listaNomesPolimorfismoExemplo = new LinkedList<>();
-
-        listaNomesPolimorfismoExemplo.add("Samira");
-        listaNomesPolimorfismoExemplo.add("Mauricio");
-        listaNomesPolimorfismoExemplo.add("Belinha");
-        listaNomesPolimorfismoExemplo.add("Cinza");
-
-        System.out.println("Exemplo de Polimorfismo com LinkedList: " + listaNomesPolimorfismoExemplo);
-
-
+//        List<String> listaNomesPolimorfismoExemplo;
+//
+//        listaNomesPolimorfismoExemplo = new ArrayList<>();
+//        listaNomesPolimorfismoExemplo.add("Samira");
+//        listaNomesPolimorfismoExemplo.add("Mauricio");
+//        listaNomesPolimorfismoExemplo.add("Belinha");
+//        listaNomesPolimorfismoExemplo.add("Cinza");
+//
+//        System.out.println("Exemplo de Polimorfismo com ArrayList: " + listaNomesPolimorfismoExemplo);
+//
+//        listaNomesPolimorfismoExemplo = new LinkedList<>();
+//
+//        listaNomesPolimorfismoExemplo.add("Samira");
+//        listaNomesPolimorfismoExemplo.add("Mauricio");
+//        listaNomesPolimorfismoExemplo.add("Belinha");
+//        listaNomesPolimorfismoExemplo.add("Cinza");
+//
+//        System.out.println("Exemplo de Polimorfismo com LinkedList: " + listaNomesPolimorfismoExemplo);
     }
 }
