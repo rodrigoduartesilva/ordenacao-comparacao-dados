@@ -41,8 +41,82 @@ public class Main {
 
 2. Crie uma classe Titulo com um atributo nome do tipo String. Implemente a interface Comparable na classe para que seja possível ordenar uma lista de objetos Titulo.
 
-3. No Exercício 2, crie alguns objetos da classe Titulo e adicione-os a uma lista. Utilize o método Collections.sort para ordenar a lista e, em seguida, imprima os títulos ordenados.
+```Java
 
-4. Crie uma lista utilizando a interface List e instancie-a tanto como ArrayList quanto como LinkedList. Adicione elementos e imprima a lista, mostrando que é possível trocar facilmente a implementação.
+package br.com.duarte.ordenacao.model;
 
-5. Modifique o Exercício 4 para declarar a variável de lista como a interface List, demonstrando o uso de polimorfismo.
+public class Titulo implements Comparable<Titulo>{
+    private String nome;
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+
+    @Override
+    public int compareTo(Titulo tituloComparar) {
+        return this.getNome().compareTo(tituloComparar.nome);
+    }
+}
+
+
+```
+
+3. Sobrescreva o método toString na classe Titulo para que este possa imprimir apenas o nome do título.
+
+```Java
+
+@Override
+    public String toString() {
+        return getNome();
+    }
+
+
+```
+
+4. No Exercício 2, crie alguns objetos da classe Titulo e adicione-os a uma lista. Utilize o método Collections.sort para ordenar a lista e, em seguida, imprima os títulos ordenados.
+
+```Java
+
+package br.com.duarte.ordenacao.main;
+
+import br.com.duarte.ordenacao.model.Titulo;
+
+import java.util.Collections;
+import java.util.LinkedList;
+import java.util.List;
+
+public class Main {
+    public static void main(String[] args) {
+        
+        Titulo tituloNome1 = new Titulo();
+        Titulo tituloNome2 = new Titulo();
+        Titulo tituloNome3 = new Titulo();
+
+
+        tituloNome1.setNome("The Matrix");
+        tituloNome2.setNome("Jogador Número 1");
+        tituloNome3.setNome("Blade Runner");
+
+        List<Titulo> listaDeTitulos = new LinkedList<>();
+
+        listaDeTitulos.add(tituloNome1);
+        listaDeTitulos.add(tituloNome2);
+        listaDeTitulos.add(tituloNome3);
+
+        Collections.sort(listaDeTitulos);
+
+        System.out.println(listaDeTitulos);
+    }
+}
+
+
+```
+
+5. Crie uma lista utilizando a interface List e instancie-a tanto como ArrayList quanto como LinkedList. Adicione elementos e imprima a lista, mostrando que é possível trocar facilmente a implementação.
+
+6. Modifique o Exercício 4 para declarar a variável de lista como a interface List, demonstrando o uso de polimorfismo.
