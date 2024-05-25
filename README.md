@@ -1,4 +1,4 @@
-# Desafio: hora da prática
+# Lista de exercícios
 
 ### Autor:
 
@@ -8,7 +8,9 @@
 
 [GitHub](https://github.com/rodrigoduartesilva/)
 
-A compreensão profunda de Collections.sort,LinkedList, Comparable, compareTo, sort e ArrayLists capacitam a ordenação eficiente de dados, enquanto a interface Comparable e o método compareTo oferecem controle sobre a ordem desejada.
+[Link do Repositório](https://github.com/rodrigoduartesilva/ordenacao-comparacao-dados)
+
+Para resolução desses exercícios é necessário ter conhecimentos de : Como criar pacotes, herança, encapsulamento, uso de getters e setters, sobrescrita de métodos, polimorfimo, interfaces,  Collections.sort, LinkedList, Comparable, compareTo, sort e ArrayLists.
 
 1. Crie uma lista de números inteiros e utilize o método Collections.sort para ordená-la em ordem crescente. Em seguida, imprima a lista ordenada.
 
